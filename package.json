@@ -1,0 +1,20 @@
+{
+  "name": "webpack-fullstack",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "build": "node ./build/build.js",
+    "start": "node ./build/serve.js",
+    "analyze": "node ./build/analyze.js"
+  },
+  "dependencies": {
+    "tslib": "^2.5.3"
+  },
+  "devDependencies": {
+    "esbuild": "^0.18.2",
+    "esbuild-plugin-tsc": "^0.4.0",
+    "typescript": "^5.1.3"
+  }
+}
