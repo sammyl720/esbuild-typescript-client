@@ -1,9 +1,7 @@
-console.log('hello');
-
 document.addEventListener('DOMContentLoaded', (e) => {
 
-  const div = document.createElement('div');
-  div.innerText = 'loaded js';
+  const el = document.createElement('h3');
+  el.innerText = 'Javascript loaded!';
 
-  document.body.appendChild(div);
+  document.body.appendChild(el);
 })

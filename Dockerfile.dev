@@ -1,0 +1,23 @@
+FROM node:lts-slim
+
+# Set the working directory inside the container
+WORKDIR /app
+
+# Copy package.json and package-lock.json files
+COPY package*.json ./
+
+# Install dependencies
+RUN npm install
+
+# Copy the entire project directory into the container
+COPY . .
+
+# Copy the generated 'www' folder to a desired location in the container
+COPY ./www /app/www
+
+ENV SERVER_DIRECTORY=/app/www
+ENV PORT=3000
+
+EXPOSE $PORT
+# Start the application (modify this according to your project's requirements)
+CMD [ "npm", "start" ]
