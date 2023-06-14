@@ -6,6 +6,9 @@
   "author": {
     "name": "Shmuel Leider"
   },
+  "repository": {
+    "url": "https://github.com/sammyl720/esbuild-typescript-client.git"
+  },
   "license": "MIT",
   "scripts": {
     "build": "node ./build/build.js",
