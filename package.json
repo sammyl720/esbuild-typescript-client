@@ -16,6 +16,7 @@
     "analyze": "node ./build/analyze.js"
   },
   "dependencies": {
+    "lit": "^2.7.5",
     "tslib": "^2.5.3"
   },
   "devDependencies": {

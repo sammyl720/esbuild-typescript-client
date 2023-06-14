@@ -10,6 +10,9 @@ export function createBuildSettings(options) {
         force: true
       }),
     ],
+    minify: true,
+    format: 'esm',
+    treeShaking: true,
     ...options
-  };
+    };
 }
